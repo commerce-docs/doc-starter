@@ -5,12 +5,15 @@ logo: Doc Starter
 baseurl:
 url:
 githuburl: https://github.com/magento-devdocs/doc-starter/
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-markdown: kramdown
-highlighter: rouge
 theme: devdocs
 permalink: pretty
 exclude: ['bin', 'node_modules', 'vendor', '.git', '.idea','Gemfile*','README.md','*.json','CODEOWNERS','package.json','vagrant.sh','s3_website.yml']
+
+markdown: kramdown
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+kramdown:
+  syntax_highlighter_opts:
+    css_class: 'highlighter'
 
 algolia:
   application_id: 'E642SEDTHL'
@@ -24,6 +27,7 @@ defaults:
     scope:
       path: "" # an empty string here means all files in the project
     values:
+      lang: "en"
       layout: "default"
 
 plugins:
