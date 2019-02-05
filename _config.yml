@@ -6,7 +6,7 @@ baseurl:
 url:
 githuburl: https://github.com/magento-devdocs/doc-starter/
 theme: devdocs
-permalink: pretty
+# permalink: pretty
 exclude: ['bin', 'node_modules', 'vendor', '.git', '.idea','Gemfile*','README.md','*.json','CODEOWNERS','package.json','vagrant.sh','s3_website.yml']
 
 markdown: kramdown
@@ -30,5 +30,29 @@ defaults:
       lang: "en"
       layout: "default"
 
+  - 
+    scope:
+      path: page-builder
+    values:
+      layout: default
+      group: page-builder
+      strip_title: true
+      github_link: false
+      feedback_link: false
+
 plugins:
   - jekyll-redirect-from
+  - jekyll-titles-from-headings
+  - jekyll-optional-front-matter
+  - jekyll-relative-links
+
+optional_front_matter:
+  remove_originals: true
+
+# Settings for the jekyll-titles-from-headings plugin.
+# For more details about the plugin, refer to https://github.com/benbalter/jekyll-titles-from-headings
+
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: false
