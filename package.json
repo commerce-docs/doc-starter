@@ -10,7 +10,7 @@
     "clean": "rm -fr _site",
     "build": "npm-run-all -s build:html",
     "build:html": "bundle exec jekyll build --source src -I",
-    "build:production": "npm-run-all -s clean && jekyll build --source src --config src/_config.yml,src/_config-production.yml",
+    "build:production": "npm-run-all -s clean && jekyll build --source src --config src/_config.yml,src/_config.production.yml",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
