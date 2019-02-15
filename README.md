@@ -39,6 +39,6 @@ Start your new documentation project by forking this repository.
 
 : Ruby gems used in the project.
 
-`_config-production.yml`
+`_config.production.yml`
 
 : Production-specific configurations.
