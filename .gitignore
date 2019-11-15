@@ -4,6 +4,7 @@ _site/
 /.bundle/
 /.asset-cache/
 /node_modules/
+/tmp
 /Gemfile.lock
 /.jekyll-metadata
 /.DS_Store
@@ -23,3 +24,6 @@ _algolia_api_key
 *.log
 *.lock
 *.tar
+
+.jekyll-cache
+_config.local.yml
