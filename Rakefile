@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+require 'bundler/setup'
 
 spec = Gem::Specification.find_by_name 'magedocs_helper'
 rakefile = "#{spec.gem_dir}/lib/magedocs_helper/Rakefile"
