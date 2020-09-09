@@ -6,6 +6,41 @@
     index:  "{{ site.algolia.index_name}}",
     key:  "{{ site.algolia.api_key}}"
   };
+
+  var indices = [
+    {
+      label: "DevDocs",
+      name: "devdocs",
+      facetFilters: [["guide_version: 2.4", "versionless: true"]],
+      refinements: [
+        {
+          label: "Functional areas",
+          attribute: "functional_areas"
+        }
+      ],
+      baseUrl: "https://devdocs.magento.com"
+    },
+    {
+      label: "User Guide",
+      name: "merchdocs",
+      baseUrl: "https://docs.magento.com/user-guide"
+    },
+    {
+      label: "MBI User Guide",
+      name: "merchdocs-mbi",
+      baseUrl: "https://docs.magento.com/mbi"
+    },
+    {
+      label: "PWA",
+      name: "pwa-devdocs",
+      baseUrl: "https://magento.github.io/pwa-studio"
+    },
+    {
+      label: "Order Management",
+      name: "oms-en",
+      baseUrl: "https://omsdocs.magento.com"
+    }
+  ];
 </script>
 
 <!-- put all your js or css files here: -->
