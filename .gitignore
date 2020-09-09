@@ -24,3 +24,4 @@ _algolia_api_key
 *.lock
 *.tar
 _site
+.jekyll-cache
