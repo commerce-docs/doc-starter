@@ -5,24 +5,22 @@ Start your new documentation project by forking this repository.
 ## Prerequisites
 
 * Ruby
-* Node
 
 ## Setup
 
-1. Install Node and Ruby dependencies
+1. Install project dependencies
 
-`npm install`
+`bunlde install`
 
 1. Start dev server.
    This server watches for changes in the src directory and updates using browser-sync.
 
-`npm start`
+```
+cd src
+bundle exec jekyll serve
+```
 
 ## Directories
-
-`scripts`
-
-: Location of misc node scripts.
 
 `src`
 
