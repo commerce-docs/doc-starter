@@ -27,7 +27,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Build settings
 githuburl: https://github.com/magento-ux/storefront-components
 theme: devdocs
-# permalink: pretty # This will generate links o
+permalink: pretty
 source: src
 
 markdown: kramdown
