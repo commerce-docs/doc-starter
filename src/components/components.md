@@ -1,6 +1,7 @@
 ---
 title: Components
 menu_title: Overview
+menu_order: 0
 permalink: components/
 ---
 
