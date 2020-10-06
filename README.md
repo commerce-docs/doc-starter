@@ -1,6 +1,6 @@
-# Documentation Starter Kit
+# Magento store design documentation
 
-Start your new documentation project by forking this repository.
+Documenting the PWA components and design patterns. Collection of resources for learning how to design a customized Magento storefront.
 
 ## Prerequisites
 
