@@ -1,6 +1,6 @@
 ---
-title: Button
-description: Buttons allow users to perform an action or to navigate to another page. They have multiple styles for various needs, and are ideal for calling attention to where a user needs to do something in order to move forward in a flow.
+title: Form
+description: Form and form elements allow blah blah blah
 links:
   prototype: https://xd.adobe.com/view/4f6db8c0-2a57-4240-9ee3-5618ca3d721f-1a3e/
   pwa_studio: https://magento.github.io/pwa-studio/venia-ui/reference/components/Button/
@@ -20,8 +20,10 @@ links:
 ## Examples
 
 {% imageswitch %}
-![Wireframe](https://placekitten.com/640/480)
-![Venia](https://placekitten.com/641/480)
-![Oasis](https://placekitten.com/642/480)
+
+![Wireframe](https://via.placeholder.com/150){: .image-switch }
+![Venia](https://via.placeholder.com/250){: .image-switch }
+![Oasis](https://via.placeholder.com/350){: .image-switch }
+
 {% endimageswitch %}
 

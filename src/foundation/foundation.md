@@ -5,4 +5,4 @@ menu_order: 0
 permalink: foundation/
 ---
 
-Foundation.
+Learn how to customize foundational components to create custom look and feel of your store.
