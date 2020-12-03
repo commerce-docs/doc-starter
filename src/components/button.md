@@ -11,6 +11,7 @@ links:
 ## Anatomy
 
 
+
 ## Options
 
 1. Primary
@@ -25,3 +26,12 @@ links:
 ![Oasis](https://placekitten.com/642/480)
 {% endimageswitch %}
 
+## Best practices
+
+- Use it when...
+
+
+##  B2b considerations 
+{: .b2b-only}
+
+...
