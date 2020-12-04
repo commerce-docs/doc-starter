@@ -10,7 +10,7 @@ Start your new documentation project by forking this repository.
 
 1. Install project dependencies
 
-`bunlde install`
+`bundle install`
 
 1. Start dev server.
    This server watches for changes in the src directory and updates using browser-sync.
