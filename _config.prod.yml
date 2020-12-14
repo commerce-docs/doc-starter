@@ -1,1 +1,2 @@
-environment: public
+# environment: public
+baseurl: /storefront-components

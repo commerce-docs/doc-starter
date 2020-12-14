@@ -1,7 +1,13 @@
 # Create your main navigation structure here
 
-- label: Section
-  url: /section/
+- label: Foundation
+  url: /foundation/
 
-- label: Another Section
-  url: /another-section/
+- label: Components
+  url: /components/
+
+- label: Templates
+  url: /templates/
+
+- label: Pages
+  url: /pages/

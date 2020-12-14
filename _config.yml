@@ -16,18 +16,18 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Documentation Starter Kit
-email: your-email@example.com
+title: Commerce store design documentation 
+email: ybannykh@adobe.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Start your new documentation project by forking this repository
-logo: Doc Starter
+  Learn how to design a customized Magento storefront.
+logo: Store Design
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-githuburl: https://github.com/magento-devdocs/doc-starter/
+githuburl: https://github.com/magento-ux/storefront-components
 theme: devdocs
-# permalink: pretty # This will generate links o
+permalink: pretty
 source: src
 
 markdown: kramdown
@@ -38,8 +38,8 @@ kramdown:
 
 algolia:
   application_id: 'E642SEDTHL'
-  index_name: 'your_index'
-  api_key: 'public_api_key'
+  index_name: 'devdocs'
+  api_key: 'd2d0f33ab73e291ef8d88d8b565e754c'
 
 defaults:
   -
@@ -48,6 +48,12 @@ defaults:
     values:
       lang: "en"
       layout: "default"
+      github_repo: https://github.com/magento-ux/storefront-components/
+      github_files: https://github.com/magento-ux/storefront-components/tree/master/
+      # Enables the 'Edit this page on GitHub' appearances on pages
+      github_link: true
+      # Enables the 'Give us feedback' appearances on pages
+      feedback_link: true
 
 plugins:
   - jekyll-redirect-from

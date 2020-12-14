@@ -1,0 +1,80 @@
+{% if page.links %}
+<div class="page-links">
+  {% if page.links.prototype %}
+
+  <a href="{{ page.links.prototype }}" target="_blank" class="spectrum-Card spectrum-Card--small spectrum-Card--horizontal">
+        
+    <div class="spectrum-Card-preview">
+      <img src="{{ site.baseurl }}/images/logos/xd-logo.svg" width="32" />
+    </div>
+
+    <div class="spectrum-Card-body">
+      <div class="spectrum-Card-header">
+        <div class="spectrum-Card-title spectrum-Heading">Interactive prototype</div>
+      </div>
+      <div class="spectrum-Card-content">
+        <div class="spectrum-Card-subtitle spectrum-Detail spectrum-Detail--S">Adobe XD</div>            
+      </div>
+    </div>
+
+  </a>
+  {% endif %}
+
+
+  {% if page.links.pwa_studio %}
+
+  <a href="{{ page.links.pwa_studio }}" target="_blank" class="spectrum-Card spectrum-Card--small spectrum-Card--horizontal">
+        
+    <div class="spectrum-Card-preview">
+      <img src="{{ site.baseurl }}/images/logos/venia-logo.svg" width="32" />
+    </div>
+
+    <div class="spectrum-Card-body">
+      <div class="spectrum-Card-header">
+        <div class="spectrum-Card-title spectrum-Heading">Developer Docs</div>
+      </div>
+      <div class="spectrum-Card-content">
+        <div class="spectrum-Card-subtitle spectrum-Detail spectrum-Detail--S">PWA Studio</div>            
+      </div>
+    </div>
+
+  </a>
+
+  {% endif %}
+
+
+  {% if page.links.source %}
+
+  <a href="{{ page.links.source }}" target="_blank" class="spectrum-Card spectrum-Card--small spectrum-Card--horizontal">
+        
+    <div class="spectrum-Card-preview">
+      <img src="{{ site.baseurl }}/images/logos/github-logo.svg" width="32" />
+    </div>
+
+    <div class="spectrum-Card-body">
+      <div class="spectrum-Card-header">
+        <div class="spectrum-Card-title spectrum-Heading">View Source Code</div>
+      </div>
+      <div class="spectrum-Card-content">
+        <div class="spectrum-Card-subtitle spectrum-Detail spectrum-Detail--S">GitHub</div>            
+      </div>
+    </div>
+
+  </a>
+
+  {% endif %}
+
+</div>
+<style>
+  .page-links .spectrum-Card {
+    margin-right: var(--spectrum-global-dimension-size-300);
+    margin-bottom: var(--spectrum-global-dimension-size-300);
+    text-decoration: none;
+  }
+
+  .content-wrap .page-links a.spectrum-Card:after {
+    display: none;
+  }
+
+</style>
+{% endif %}

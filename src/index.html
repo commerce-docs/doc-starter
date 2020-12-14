@@ -1,0 +1,98 @@
+---
+layout: home
+
+sections: 
+
+  -
+    heading: Foundation
+    description: Basic principles and parts of storefront design system. Learn how to customize them to fit your brand.
+    url: /foundation/
+
+  -
+    heading: Components
+    description: Basic principles and parts of storefront design system. Learn how to customize them to fit your brand.
+    url: /components/
+
+  -
+    heading: Templates
+    description: Basic principles and parts of storefront design system. Learn how to customize them to fit your brand.
+    url: /templates/
+
+  -
+    heading: Pages
+    description: Basic principles and parts of storefront design system. Learn how to customize them to fit your brand.
+    url: /pages/
+
+
+
+resources:
+  - 
+    heading: "Storefront components UI kit"
+    image: "/images/logos/xd-logo.svg"
+    detail: Adobe XD, 9MB
+    link: Get UI kit
+    url: kit/
+  - 
+    heading: "PWA Studio demo store"
+    image: "/images/logos/venia-logo.svg"
+    detail: venia.magento.com
+    link: Visit demo store
+    url: https://venia.magento.com/
+  - 
+    heading: "#pwa-design channel"
+    image: "/images/logos/slack-logo.svg"
+    detail: magentocommeng.slack.com
+    link: Join Slack channel
+    url: https://magentocommeng.slack.com/
+
+
+---
+
+
+<section class="section">
+
+  <div class="columns large-2">
+    {% for section in page.sections %}
+    <a href="{{ site.baseurl }}{{ section.url }}" class="card">
+      <h3 class="no_toc">{{ section.heading }}</h3>
+      <p>{{ section.description }}</p>
+    </a>
+
+    {% endfor %}
+  </div>
+
+</section>
+
+
+<section class="section">
+  <h2 class="text-center">Design resources</h2>
+
+  <div class="columns large-3">
+
+    {% for resource in page.resources %}
+    <div class="column">
+      <a href="{{ resource.url }}" target="_blank" class="spectrum-Card spectrum-Card--small spectrum-Card--horizontal spectrum-Card--quiet">
+        
+        <div class="spectrum-Card-preview">
+          <img src="{{ site.baseurl }}{{ resource.image }}" width="58" />
+        </div>
+
+        <div class="spectrum-Card-body">
+          <div class="spectrum-Card-header">
+            <div class="spectrum-Card-title spectrum-Heading"><h4>{{ resource.heading }}</h4></div>
+          </div>
+          <div class="spectrum-Card-content">
+            <div class="spectrum-Card-subtitle spectrum-Detail spectrum-Detail--S">{{ resource.detail }}</div>            
+          </div>
+          <div class="spectrum-Card-action">
+            <div class="spectrum-Card-action">{{ resource.link }}</div>
+          </div>
+        </div>
+
+      </a>
+    </div>
+    {% endfor %}
+
+  </div>
+
+</section>
